@@ -1,0 +1,106 @@
+/** @format */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 100vh;
+  background-color: rgb(226, 225, 225);
+  padding: 12px;
+  gap: 6px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100vh;
+  background-color: seagreen;
+}
+
+#pet-header {
+  font-size: 26px;
+}
+#main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#pets-container {
+  display: flex;
+  display: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  /* background-color: beige; */
+}
+
+.pet-container {
+  border: 5px solid rgb(243, 151, 52);
+  border-radius: 10px;
+  gap: 5px;
+  padding: 15px 0px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  width: 250px;
+  height: 400px;
+  background-color: rgb(250, 250, 250);
+}
+
+.pet-container > input:read-only {
+  all: unset;
+  margin-left: 16px;
+  white-space: wrap;
+}
+
+#pet-gender {
+  width: min-content;
+}
+
+.pet-description:read-only {
+  all: unset;
+  /* height: 150px; */
+  width: 180px;
+  white-space: wrap;
+  border: 2px solid rgb(231, 231, 231);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#pet-energy:read-only {
+  padding-bottom: 20px;
+}
+
+.pet-img {
+  padding-bottom: 28px;
+}
+
+#show-pet {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+#show-pet > input {
+  accent-color: rgb(243, 151, 52);
+}
